@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="client.js" defer></script>
+   
+</head>
+<body>
+<div class="container">
+    <div class="container__bgimg">
+        <div class="container__gradient">
+
+            <div class="date__container">
+                <h2 id="date__dayname" class="date__dayname"></h2>
+                <span id= "date__largedate" class="date__largedate"></span>
+                <img src="assets/location.svg" id="date__locationicon" class="date__locationicon"></img>
+                <span id= "date__location" class="date__location"></span>
+            </div>
+
+            <div class="currentposition__container" onclick="getCurrentLocation()">
+                <img src="assets/currentlocation.svg" alt="currentlocationicon" id="currentposition__img" class="currentposition__img">
+            </div>
+
+            <div class="input__container">
+                <form id="input__form">
+                    <input name="inputcity" id="input__text" class="input__text" placeholder="Weather in" autocomplete="off">
+                </form>
+            </div>
+
+            <div class="weather__container">
+                <img id="weather__icon" class="weather__icon"></i>
+                <h1 id="weather__temp" class="weather__temp"></h1>
+                <h3 id="weather__description" class="weather__description" data-=""></h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

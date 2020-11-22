@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+
+:root{
+    --gradient:background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  color: beige;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/land1.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: beige;
+  height: 80%;
+  width: 450px;
+  transition: 300ms ease;
+}
+
+.container__bgimg {
+  position: relative;
+  height: 100%;
+  border-radius: 25px;
+  background-image: url(assets/faro.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: transform 300ms ease;
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+  width: 100%;
+  float: left;
+}
+
+.container__bgimg:hover {
+  transform: scale(1.04) perspective(1500px);
+}
+
+.container__gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: var(--gradient);
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  opacity: 0.9;
+}
+
+.date__container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.date__dayname {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.date__largedate {
+  display: block;
+}
+
+.date__location {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.date__locationicon {
+  display: inline-block;
+  margin-top: 10px;
+  height: 1.2em;
+  width: auto;
+  color: beige;
+  margin-right: 5px;
+}
+
+.weather__container {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.weather__icon{
+     height: 100px;
+     width: auto;
+
+      
+}
+
+.weather__temp{
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.input__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 27%;
+}
+
+.input__text{
+  background-color: beige;
+  border-radius: 25px;
+  border: none;
+  height: 30px;
+  color: #222831;
+  padding: 10px;
+  font-weight: 700;
+  outline: none;
+}
+
+.input__text:hover{
+  outline: none;
+}
+
+.currentposition__container{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  transition: 500ms ease transform;
+}
+
+.currentposition__container:hover{
+  transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .container {
+      transition: 300ms ease;
+      width: 330px;
+    }
+    
+  }

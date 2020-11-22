@@ -83,6 +83,7 @@ function getDayName(){
     let day = 'Sunday'
     return day
   }
+  console.log(date.getDay())
   return date;
 }
 

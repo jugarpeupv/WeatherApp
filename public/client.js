@@ -79,11 +79,11 @@ function getDayName(){
   } else if(date.getDay()===6){
     let day = 'Saturday'
     return day
-  } else if(date.getDay()===7){
+  } else if(date.getDay()===0){
     let day = 'Sunday'
     return day
   }
-  console.log(date.getDay())
+ 
   return date;
 }
 
